@@ -1,0 +1,5 @@
+J:\Projects\WpfApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+J:\Projects\WpfApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+J:\Projects\WpfApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+J:\Projects\WpfApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+J:\Projects\WpfApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

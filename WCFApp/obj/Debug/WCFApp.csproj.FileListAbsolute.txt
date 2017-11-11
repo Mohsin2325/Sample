@@ -1,0 +1,5 @@
+J:\Projects\WpfApplication1\WCFApp\bin\Debug\WCFApp.dll.config
+J:\Projects\WpfApplication1\WCFApp\bin\Debug\WCFApp.dll
+J:\Projects\WpfApplication1\WCFApp\bin\Debug\WCFApp.pdb
+J:\Projects\WpfApplication1\WCFApp\obj\Debug\WCFApp.dll
+J:\Projects\WpfApplication1\WCFApp\obj\Debug\WCFApp.pdb
