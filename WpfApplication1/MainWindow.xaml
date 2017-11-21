@@ -61,7 +61,7 @@
             </Button.Content>
         </Button>
 
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="305,94,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="42" Width="81" MouseDown="textBlock_MouseDown" >
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="305,94,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="42" Width="81" MouseDown="textBlock_MouseDown" MouseEnter="textBlock_MouseEnter">
             <TextBlock.Text>
                 <MultiBinding Converter="{StaticResource SingleConverter}">
                     <Binding ElementName="CheckBoxDem" Path="IsChecked"/>

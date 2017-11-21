@@ -111,31 +111,33 @@ namespace WpfApplication1
             Predicate<object> p = (pp) => pp.ToString().Equals("1");
             // Func<string, object> fn = (fp, p) =>  p = 5;
             ServiceReference1.Service1Client svc = new ServiceReference1.Service1Client();
+            svc.ClientCredentials.UserName.UserName = "a";
+            svc.ClientCredentials.UserName.Password = "a";
             //ServiceReference2.PayMentServiceClient pvc = new ServiceReference2.PayMentServiceClient();
            
             try
             {
                 textBlock.Text = svc.GetData(10);
                 
-                re.Method = "PUT";
-                re.ContentType = "application/json";
-                re.ContentLength = 0;
-                //re.BeginGetResponse(null, null);
-                //var request = (HttpWebRequest)re.GetResponse(("http://localhost:82/PayMentService.svc/paybill/1/htt");
-                //re.BeginGetRequestStream(BuildRequest, null);
-               HttpWebResponse response = re.GetResponse() as HttpWebResponse;
-                //byte[] bt = new byte[1000];
-                //MemoryStream st = new MemoryStream(response.GetResponseStream().Read(bt,0,1000));
-                Stream st = response.GetResponseStream();
-                //st.Read(bt, 0, 1000);
+               // re.Method = "PUT";
+               // re.ContentType = "application/json";
+               // re.ContentLength = 0;
+               // //re.BeginGetResponse(null, null);
+               // //var request = (HttpWebRequest)re.GetResponse(("http://localhost:82/PayMentService.svc/paybill/1/htt");
+               // //re.BeginGetRequestStream(BuildRequest, null);
+               //HttpWebResponse response = re.GetResponse() as HttpWebResponse;
+               // //byte[] bt = new byte[1000];
+               // //MemoryStream st = new MemoryStream(response.GetResponseStream().Read(bt,0,1000));
+               // Stream st = response.GetResponseStream();
+               // //st.Read(bt, 0, 1000);
                 
-                //while(st.ReadByte()!=-1)
-                //{
+               // //while(st.ReadByte()!=-1)
+               // //{
 
-                //}
-                //st.Position = 0;
-                DataContractJsonSerializer ds = new DataContractJsonSerializer(typeof(Employee));
-               object emp=(Employee) ds.ReadObject(st);
+               // //}
+               // //st.Position = 0;
+               // DataContractJsonSerializer ds = new DataContractJsonSerializer(typeof(Employee));
+               //object emp=(Employee) ds.ReadObject(st);
                 
                 //long pt = st.Length;
 
@@ -162,5 +164,22 @@ namespace WpfApplication1
            // postStream.Write(byteArray, 0, byteArray.Length);
            // postStream.Close();
         }
+
+        private void textBlock_MouseEnter(object sender, MouseEventArgs e)
+        {
+            ServiceReference1.Service1Client svc = new ServiceReference1.Service1Client();
+            svc.ClientCredentials.UserName.UserName = "a";
+            svc.ClientCredentials.UserName.Password = "a";
+            //ServiceReference2.PayMentServiceClient pvc = new ServiceReference2.PayMentServiceClient();
+
+            try
+            {
+                textBlock.Text = svc.GetData(10);
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
+    }
 }
