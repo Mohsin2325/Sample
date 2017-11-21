@@ -145,14 +145,14 @@ namespace ConsoleApplication1
                 Monitor.Enter(aa);
                 {
                     Console.Write("extension thread" + p);
-                    //throw new Exception();
+                    //throw new Exception(); test
                 }
                 
             }
             catch (Exception ex)
             {
-                
 
+                string st = ex.ToString();
             }
             finally
             {
